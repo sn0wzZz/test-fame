@@ -1,0 +1,24 @@
+query getPoll($slug: String!) {
+  getPoll(slug: $slug) {
+    id
+    name
+    slug
+    isPublished
+    desc
+    color
+    progressColor
+    imgSrc
+    questions {
+      id
+      questionName
+      typeAnswer
+      isRequired
+      answers {
+        createdAt
+        id
+        name
+        value
+      }
+    }
+  }
+}

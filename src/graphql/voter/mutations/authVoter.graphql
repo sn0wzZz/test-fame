@@ -1,0 +1,3 @@
+mutation authVoter($email: String!, $firstName: String!, $lastName: String!, $pollSlug: String!) {
+  authVoter(email: $email, firstName: $firstName, lastName: $lastName, pollSlug: $pollSlug)
+}

@@ -1,0 +1,251 @@
+// Typography
+.h1 {
+    @apply text-4xl font-extrabold leading-tight tracking-tighter;
+}
+
+.h2 {
+    @apply text-3xl font-extrabold leading-tight tracking-tighter;
+}
+
+.h3 {
+    @apply text-3xl font-bold leading-tight;
+}
+
+.h4 {
+    @apply text-2xl font-bold leading-snug tracking-tight;
+}
+
+@screen md {
+    .h1 {
+        @apply text-5xl;
+    }
+
+    .h2 {
+        @apply text-4xl;
+    }
+}
+
+// Buttons
+.btn,
+.btn-sm,
+.btn-xs,
+.selectCategory {
+    @apply font-medium inline-flex items-center justify-center border border-transparent rounded leading-snug transition duration-150 ease-in-out;
+}
+
+.btn {
+    @apply px-8 py-3 shadow-lg;
+}
+
+.btn-sm {
+    @apply px-4 py-2 shadow;
+}
+
+.btn-xs {
+  @apply px-2 py-1 shadow;
+}
+
+.btn-getDirections {
+  @apply rounded-t-none;
+}
+
+// Forms
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select,
+.form-checkbox,
+.form-radio {
+    @apply bg-white border border-gray-300 focus:border-gray-500;
+}
+
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select,
+.form-checkbox {
+    @apply rounded;
+}
+
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select {
+    @apply py-3 px-4;
+}
+.form-input-xs {
+  @apply py-1 px-2;
+}
+
+.form-input-md {
+  @apply py-2 px-4;
+} 
+.form-input,
+.form-textarea {
+    @apply placeholder-gray-500;
+}
+
+.form-select {
+    @apply pr-10;
+}
+
+.form-error {
+  @apply border border-red-500
+}
+.form-checkbox,
+.form-radio {
+    @apply text-gray-800 rounded-sm;
+}
+
+.modal-container {
+  @apply fixed z-50 w-full overflow-y-auto overflow-x-hidden h-full backdrop-blur-sm bg-black bg-opacity-5	
+}
+
+.modal-body {
+  @apply relative max-w-2xl h-auto mx-4 md:mx-auto;
+  top: 5vh;
+}
+.selectModal-body {
+  @apply relative max-w-5xl h-auto mx-4 md:mx-auto;
+  top: 5vh;
+}
+.blockModalBody {
+  @apply relative max-w-2xl h-auto mx-4 md:mx-auto;
+  top: 35vh;
+}
+.deactivateModalBody{
+  @apply relative max-w-2xl h-auto mx-4 md:mx-auto;
+  top: 25vh;
+}
+.changeAddressModalBody{
+  @apply relative max-w-2xl h-auto mx-4 md:mx-auto;
+  top: 10%;
+}
+.startChatModalBody {
+  @apply relative max-w-2xl h-auto mx-4 md:mx-auto;
+  top: 15vh;
+}
+.blockSettingsModalBody {
+  @apply relative max-w-2xl h-auto mx-4 md:mx-auto;
+  top: 20vh;
+}
+.add-tool-modal-body {
+  top: 10%;
+}
+.select-category-modal-body {
+  top: 15%;
+}
+.modal-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 400ms, opacity 400ms;
+}
+.modal-show {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 400ms;
+}
+
+.search-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 400ms, opacity 400ms;
+}
+.search-show {
+visibility: visible;
+opacity: 1;
+transition: visibility 0s linear 0s, opacity 400ms;
+}
+
+.emoji-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 400ms, opacity 400ms;
+}
+.emoji-show {
+visibility: visible;
+opacity: 1;
+transition: visibility 0s linear 0s, opacity 400ms;
+}
+.alert-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 400ms, opacity 400ms;
+}
+
+.modal-show {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 400ms;
+}
+.alert-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 400ms, opacity 400ms;
+}
+.alert-show {
+visibility: visible;
+opacity: 1;
+transition: visibility 0s linear 0s, opacity 400ms;
+}
+
+.places div:last-child {
+  @apply rounded-b
+}
+
+.dropdownMenu {
+  @apply absolute right-0 mt-3 w-64 rounded bg-white shadow-xl text-gray-900
+}
+.dropdownElement {
+  @apply cursor-pointer px-3 py-2 font-medium text-gray-600 hover:text-gray-900
+}
+
+.notificationsMenu {
+  @apply absolute right-0 mt-3 py-2 w-96 rounded bg-white shadow-xl text-gray-900
+}
+.notificationElement {
+  @apply cursor-pointer px-3 py-2 font-medium text-gray-600 hover:text-gray-900
+}
+
+.noNotifications{
+  @apply px-6 py-4 text-gray-600 text-center text-sm
+}
+
+.loadMore{
+  @apply px-6 pt-2 text-gray-600 text-center text-xs mx-auto cursor-pointer hover:text-gray-800
+}
+
+.dropdownMenuProfile {
+  @apply absolute right-0 mt-10 w-32 rounded bg-white shadow-xl text-gray-900
+}
+.dropdownElementProfile {
+  @apply cursor-pointer px-3 py-2 font-medium text-sm text-left text-gray-600 hover:text-gray-900
+}
+
+.dropdownNotification {
+  @apply absolute right-0 mt-1 w-40 rounded bg-white shadow-xl text-gray-900
+}
+
+.dropdownElementNotification {
+  @apply cursor-pointer px-3 py-2 font-medium  text-sm text-left text-gray-600 hover:text-gray-900
+}
+
+.settingsInput {
+  @apply px-1 font-medium text-gray-700 cursor-pointer focus:cursor-text bg-transparent
+}
+.searchPlaceInput{
+  @apply rounded-b-none focus:border-gray-300 border-b-0
+}
+
+.toggle {
+  @apply h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-blue-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300
+}
+
+em-emoji-picker {
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+
+input:checked + svg {
+  display: block;
+}

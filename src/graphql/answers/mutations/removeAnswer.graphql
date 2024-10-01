@@ -1,0 +1,3 @@
+mutation removeAnswer($data: RemoveAnswerInput!) {
+  removeSendedAnswer(data: $data)
+}

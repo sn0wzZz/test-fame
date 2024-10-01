@@ -1,0 +1,6 @@
+query getVotes($pollSlug: String!) {
+  getVotes(pollSlug: $pollSlug) {
+    answerValue
+    answerId
+  }
+}

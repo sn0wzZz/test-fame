@@ -1,0 +1,3 @@
+query getAllVotes($pollSlug: String!) {
+  getAllVotes(pollSlug: $pollSlug)
+}

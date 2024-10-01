@@ -1,0 +1,6 @@
+query signRequest($params: signRequestInput) {
+  signRequest(params: $params) {
+    timestamp
+    signature
+  }
+}

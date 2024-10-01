@@ -1,0 +1,9 @@
+query getAllPolls {
+  getAllPolls {
+    id
+    name
+    imgSrc
+    desc
+    slug
+  }
+}

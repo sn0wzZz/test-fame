@@ -1,0 +1,3 @@
+mutation CompleteVote($slug: String!) {
+  completeVote(slug: $slug)
+}

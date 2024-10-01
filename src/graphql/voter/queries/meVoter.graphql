@@ -1,0 +1,6 @@
+query MeVoter {
+  meVoter {
+    id
+    email
+  }
+}

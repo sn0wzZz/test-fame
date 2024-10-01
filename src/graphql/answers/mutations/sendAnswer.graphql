@@ -1,0 +1,3 @@
+mutation sendAnswer($data: SendAnswerInput!) {
+  sendAnswer(data: $data)
+}

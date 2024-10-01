@@ -1,0 +1,27 @@
+query getMembers($id: String!) {
+    getMembers(id: $id) {
+        currentMember {
+            id
+            firstName,
+            lastName,
+            role,
+            company,
+            memberCategory,
+            shortDesc,
+            longDesc,
+            imgUrl,
+            logos,
+            isBoard
+        }
+        nextMember {
+            id
+            firstName,
+            lastName,
+        }
+        previousMember {
+            id
+            firstName,
+            lastName,
+        }
+    }
+}

@@ -1,0 +1,3 @@
+mutation subscribeEmail($email: String!) {
+  subscribeEmail(email: $email)
+}

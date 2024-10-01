@@ -1,0 +1,15 @@
+query getAllMembers($slug: String!) {
+  getAllMembers(slug: $slug) {
+    id
+    firstName
+    lastName
+    role
+    company
+    memberCategory
+    shortDesc
+    longDesc
+    imgUrl
+    logos
+    isBoard
+  }
+}
